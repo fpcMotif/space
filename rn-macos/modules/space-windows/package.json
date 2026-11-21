@@ -1,0 +1,11 @@
+{
+  "name": "space-windows",
+  "version": "0.0.1",
+  "description": "Native window listing/arranging for the Space fractal-rooms prototype (macOS Accessibility API)",
+  "main": "index.js",
+  "source": "index.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native-macos": "0.83.0"
+  }
+}

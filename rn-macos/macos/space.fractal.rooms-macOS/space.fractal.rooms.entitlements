@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- App Sandbox is off: this app drives other apps' windows through the
+	     Accessibility API and reads the shared space.json file outside any
+	     sandbox container, neither of which the sandbox permits. Rooms
+	     (Sources/), the Swift app this prototype explores an alternative
+	     front end for, is unsandboxed for the same reason. -->
+	<key>com.apple.security.app-sandbox</key>
+	<false/>
+</dict>
+</plist>
