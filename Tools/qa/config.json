@@ -1,0 +1,20 @@
+{
+  "project": "space.space-rn-macos",
+  "surface": "macos",
+  "choice": "Native project tests and desktop inspection; browser automation does not verify macOS UI",
+  "commands": {
+    "test": {
+      "cwd": "rn-macos",
+      "argv": ["bun", "run", "test", "--runInBand"]
+    },
+    "test:swift": {
+      "argv": ["make", "test"]
+    },
+    "doctor": {
+      "argv": ["xcrun", "xcodebuild", "-version"]
+    },
+    "harness:check": {
+      "argv": ["bun", "--no-env-file", "tools/qa/self-check.mjs"]
+    }
+  }
+}
